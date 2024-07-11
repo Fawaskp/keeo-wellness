@@ -571,7 +571,7 @@ h1.watchs_taital::after {
 .navbar-light .navbar-nav .nav-link.active, 
 .navbar-light .navbar-nav .nav-link.show, 
 .navbar-light .navbar-nav .show > .nav-link {
-    color: #ffffff;
+    color: #000;
     #5A121E
 }
 .banner_text {
