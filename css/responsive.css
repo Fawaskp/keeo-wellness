@@ -165,7 +165,7 @@
     padding-right: 5px;
 }
 .header_section{
-    background: #0a0a09;
+    background: #ffcc81;
 }
 
 
@@ -634,10 +634,12 @@ h1.watchs_taital::after {
 }
 .send_bt a {
     padding: 10px 0px;
+    
 }
 .massage-bt {
     height: 100px;
     padding: 35px 20px 20px 20px;
+    border-radius: 18px;
 }
 
 .footer_section{
@@ -668,4 +670,21 @@ h1.watchs_taital::after {
 
 
 
+}
+
+
+@media only screen and (min-width: 868px){
+    h1.watchs_taital::after {
+        content: '';
+        position: absolute;
+        width: 400px;
+        background-color: #fff;
+        height: 2px;
+        left: initial;
+        right: 0px;
+        bottom: 40px;
+    }
+    .banner-img{
+        display: block!important;
+    }
 }

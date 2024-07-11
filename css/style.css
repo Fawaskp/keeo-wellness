@@ -60,6 +60,32 @@ a {
      transition: all .3s ease-in-out;
 }
 
+/*--------------------------------------------------------------------- scroll bar ---------------------------------------------------------------------*/
+
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-track {
+    border-radius: 7px;
+  }
+  
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #5A121E; 
+    border-radius: 7px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #5A121E; 
+  }
+/*--------------------------------------------------------------------- scroll bar ---------------------------------------------------------------------*/
+
+
 h1,
 h2,
 h3,
@@ -226,14 +252,13 @@ button {
 .header_section {
     width: 100%;
     float: left;
-    /* background-image: url(../images/banner-bg.png); */ 
     height: auto;
-    background-size: 100%;
     padding: 0px 0px 20px 0px;
 }
 
 .logo-img{
-    width: 70px;
+    width: 65px;
+    padding: 10px;
 }
 
 .welcome-keeo-wellness{
@@ -252,7 +277,6 @@ button {
     background-color: transparent !important;
 }
 .logo {
-    width: 100%;
     float: left;
     text-align: center;
     /* padding-bottom: 20px; */
@@ -297,9 +321,7 @@ button {
     padding-left: 0;
     margin-bottom: 0;
     list-style: none;
-    width: 100%;
-    text-align: center;
-    margin: 0 auto;
+    text-align: end;
 }
 .menu_main ul {
     margin: 0px;
@@ -311,7 +333,7 @@ button {
     float: left;
     padding-left: 10px;
     padding-right: 10px;
-    font-size: 18px;
+    font-size: 13px;
     text-transform: uppercase;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -345,10 +367,8 @@ button {
 
 .header_main {
     width: 100%;
-    background-image: url(../images/header-bg.png);
-    background-size: 100%;
     padding: 10px 0px 37px 0px;
-    background-repeat: no-repeat;
+    overflow: hidden;
 }
 
 /* header section end */
@@ -359,6 +379,8 @@ button {
     width: 100%;
     float: left;
     padding-bottom: 90px;
+    height: 100vh;
+
 }
 
 .banner_taital {
@@ -453,16 +475,7 @@ button {
     font-weight: bold;
     text-transform: uppercase;
 }
-h1.watchs_taital::after {
-    content: '';
-    position: absolute;
-    width: 400px;
-    background-color: #fff;
-    height: 2px;
-    left: initial;
-    right: 0px;
-    bottom: 40px;
-}
+
 
 .watchs_section_2{
     width: 100%;
@@ -813,17 +826,19 @@ textarea#comment::placeholder {
     width: 80%;
     margin: 0 auto;
     text-align: center;
+    display: flex;
+    justify-content: center;
 }
 .location_left {
-    width: 33.3%;
+    width: 12.3%;
     float: left;
 }
 .location_middle {
-    width: 33.3%;
+    width: 30.3%;
     float: left;
 }
 .location_right {
-    width: 33.3%;
+    width: 23.3%;
     float: left;
 }
 .call_text {
