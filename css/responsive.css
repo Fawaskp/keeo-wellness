@@ -502,7 +502,7 @@ h1.watchs_taital::after {
 }
 
 .logo-img{
-    width: 45px;
+    width: 50px;
 }
 
 .welcome-keeo-wellness{
@@ -606,9 +606,7 @@ h1.watchs_taital::after {
 .uni_text{
     padding-top: 0px;
 }
-.image_2{
-    padding-top: 30px;
-}
+
 .about_text {
     padding: 10px 0px 20px 0px;
 }
@@ -705,6 +703,13 @@ h1.watchs_taital::after {
     .layout_padding {
         padding: 22px 25px;
    }
+   .banner_section{
+    padding: 30px 30px;
+
+   }
+   .contact-icons{
+    width: 6.5%;
+   }
 }   
 
 @media (min-width: 1450px) {
@@ -713,14 +718,14 @@ h1.watchs_taital::after {
     }
   }
 
-  @media (min-width: 200px) {
+  @media (min-width: 2000px) {
     .container {
       max-width: 1800px;
     }
   }
 
 @media (min-width: 990px) and (max-width: 2600px) {
-    .banner_section{
+    .header_section{
         height: 100vh;
     }
 }

@@ -21,16 +21,10 @@
       <link rel="stylesheet" href="css/responsive.css">
       <!-- fevicon -->
       <link rel="icon" href="images/favicon.png" />
-      <!-- Scrollbar Custom CSS -->
-      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
       <!-- Tweaks for older IEs-->
       <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
       <!-- fonts -->
       <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
-      <!-- owl stylesheets --> 
-      <link rel="stylesheet" href="css/owl.carousel.min.css">
-      <link rel="stylesheet" href="css/owl.theme.default.min.css">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
    </head>
    <body>
       <!-- header section start -->
@@ -45,7 +39,7 @@
                   <div class="collapse navbar-collapse" id="navbarNav">
                      <ul class="navbar-nav">
                         <li class="nav-item active">
-                           <a class="nav-link" href="index.html">Home</a>
+                           <a class="nav-link" href="">Home</a>
                         </li>
                         <li class="nav-item">
                            <a class="nav-link" href="about.html">About</a>
@@ -62,8 +56,8 @@
                <div class="menu_main">
                   <ul>
                      <li class="active"><a href="index.html">Home</a></li>
-                     <li><a href="">About</a></li>
-                     <li><a href="#contact_section">Contact us</a></li>
+                     <li><a href="about.html">About</a></li>
+                     <li><a href="#contact_section">Contact</a></li>
                   </ul>
                </div>
             </div>
@@ -75,14 +69,10 @@ animation: banner-loading-animation2 1s ease;
 }
 
 .banner-img{
+   width: 100%;
    display: none;
-   position: absolute; 
-   width: 40%; 
-   right: 0; 
-   top: 15rem;
-   filter: opacity(.75) saturate(.2);
-
-   animation: banner-loading-animation 1s ease;
+   filter: opacity(.8) saturate(.2);
+   animation: banner-loading-animation 1s;
 }
 
 
@@ -110,10 +100,11 @@ animation: banner-loading-animation2 1s ease;
    }
 }
 
+
 .bouncing-text {
    color: #5A121E;
             display: inline-block;
-            animation: bounce 1s reverse 1s ease-in; 
+            animation: bounce 1s ease-in .34s; 
         }
 
         @keyframes bounce {
@@ -121,29 +112,37 @@ animation: banner-loading-animation2 1s ease;
                 transform: translateY(0);
             }
             50% {
-                transform: translateY(-20px);
+                transform: translateY(-17.5px);
             }
-        }
+        } 
 
 
          </style>
 
          <!-- banner section start -->
-         <div style="position: relative; margin: 0 auto;" class="banner_section container">
-         <img  src="./images/DSC03663.png" alt="" class="banner-img banner-img-before">
-            
-            <div  id="welcome-text" >
+         <div style="display: flex;" class="banner_section container">
+            <div   id="welcome-text" style="flex-direction: column;" >
+              <div id="height-calculator" style="display: none;" >
                <h1 class="welcome-keeo-wellness" >
                   Welcome to <br style="display: none;" > 
                   <br class="welcome-keeo-wellness-br" >
                    <span style="color: #5A121E;">Keeo Wellness</span>
                </h1>
-               <h2 class="welcome-description-1">
+               <h2 class="welcome-description-2">
                   where we're dedicated to guiding you on your path to a <b class="bouncing-text" >healthier, happier</b> you.
                </h2>
-               <h3 class="welcome-description-2">
-                  Discover a curated selection of products and expert advice tailored to nurture your mind, body, and soul, empowering you to embrace wellness as a lifestyle.
-               </h3>
+
+               <div style="display: flex; justify-content: between; height: 55 " >
+                  <div style="width: 70%; padding: 2rem 0;" >
+                     <h3 class="welcome-description-2">
+                        Discover a curated selection of products and expert advice tailored to nurture your mind, body, and soul, empowering you to embrace wellness as a lifestyle.
+                     </h3>
+                  </div>
+                  <div >
+                     <img src="./images/DSC03663.png" alt="" class="banner-img">
+                  </div>
+               </div>
+              </div>
             </div>
          </div>
          <!-- banner section end -->
@@ -160,20 +159,20 @@ animation: banner-loading-animation2 1s ease;
                <!-- <h1 class="watchs_taital">About Shop</h1> -->
                <div class="about_section_2">
                   <div class="row">
+                     <div class="col-md-6">
+                        <div class="image_2" style="border-radius: 25px; overflow: hidden;"><img src="images/img-3.jpg"></div>
+                     </div>
                      <div class="col-md-6" style="padding: 0;">
                         <p class="about_text">
                            Black garlic is a superfood with a sweet, tangy flavor. It's rich in antioxidants, boosts immunity, promotes heart health, and has anti-inflammatory properties. The fermentation process enhances nutrient absorption, making it a tasty way to improve your well-being.
                         </p>
                         <div class="read_bt1"><a href="https://wa.me/+919747253236/?text=Hi,%20I'm%20interested%20to%20know%20more%20about%20the%20product.">Buy Now</a></div>
                      </div>
-                     <div class="col-md-6">
-                        <div class="image_2" style="border-radius: 25px; overflow: hidden;"><img src="images/img-3.jpg"></div>
-                     </div>
                      
                     
                   </div>
                </div>
-               <div class="about_section_3">
+               <div class="about_section_3 container">
                   <div class="row">
                      <div class="col-md-4">
                         <div class="border_main">
@@ -252,10 +251,10 @@ animation: banner-loading-animation2 1s ease;
                </ul>
             </div>
 
-            <div class="location_main">
+            <div class="location_main"  >
                <div class="location_right">
                   <div class="call_text"><a href="tel:+919747253236">
-                     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                     <svg class="contact-icons" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
                         <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
                       </svg>
                      <span class="call_padding">+91 9747253236</span></a></div>
@@ -264,7 +263,7 @@ animation: banner-loading-animation2 1s ease;
                <div class="location_middle">
                   <div class="call_text">
                      <a href="mailto:keeo.contact@gmail.com?subject=Enquiry%20about%20the%20product.">
-                        <svg xmlns="http://www.w3.org/2000/svg" height="32" width="32" viewBox="0 0 512 512"><path fill="#7e7e7e" d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg>
+                        <svg class="contact-icons" xmlns="http://www.w3.org/2000/svg" height="32" width="32" viewBox="0 0 512 512"><path fill="#7e7e7e" d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg>
                         <span class="call_padding">keeo.contact@gmail.com</span>
                      </a>
                   </div>
@@ -273,7 +272,7 @@ animation: banner-loading-animation2 1s ease;
                <div class="location_left">
                   <div class="call_text">
                      <a>
-                        <svg xmlns="http://www.w3.org/2000/svg" height="32" width="32" viewBox="0 0 384 512"><path fill="#7e7e7e" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>
+                        <svg class="contact-icons" xmlns="http://www.w3.org/2000/svg" height="32" width="32" viewBox="0 0 384 512"><path fill="#7e7e7e" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>
                         <span style="padding-left: 10px;" >Kerala</span>
                      </a>
                   </div>
@@ -290,14 +289,17 @@ animation: banner-loading-animation2 1s ease;
          </div>
       </div>
       <!-- copyright section end -->
-      <!-- Javascript files-->
-       <!-- <script>
-         window.addEventListener('load',()=>{
-            document.getElementById('welcome-text').classList.add('visible')
-            console.log(document.getElementsByClassName('banner-img')[0])
-            document.getElementsByClassName('banner-img')[0].classList.add('banner-img-visible')
-         })
-       </script> -->
+
+      <script>
+         var tgt = document.getElementById('height-calculator')
+         if(window.innerWidth>830){
+            var navbarHeight = document.getElementsByClassName('header_main')[0].offsetHeight
+         var fullHeight = window.innerHeight
+         var finalCalc = fullHeight-navbarHeight-tgt.offsetHeight-navbarHeight
+         tgt.style.paddingTop = finalCalc/4+'px'
+      }
+      tgt.style.display='block'
+      </script>
       <script src="js/jquery.min.js"></script>
       <script src="js/popper.min.js"></script>
       <script src="js/bootstrap.bundle.min.js"></script>

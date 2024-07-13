@@ -257,7 +257,7 @@ button {
 }
 
 .logo-img{
-    width: 65px;
+    width: 75px;
     padding: 10px;
 }
 
@@ -276,7 +276,6 @@ padding-top: 14px;
 .welcome-description-2{
         color: white !important;
     font-size: 30px;
-    max-width: 50%;
     padding-top: 14px;
 }
 
@@ -452,14 +451,6 @@ padding-top: 14px;
 }
 
 /* banner section end */
-/* background bg section start */
-.background_bg{
-    width: 100%;
-    float: left;
-    background-image: url(../images/background-bg.png);
-    height: auto;
-}
-/* background bg section end */
 
 /* watchs section start */
 
@@ -522,9 +513,9 @@ padding-top: 14px;
     float: left;
 }
 .image_2{
-    width: 80%;
-    float: right;
+    width: 70%;
     text-align: right;
+    margin: 0 auto;
 }
 
 .read_bt1 {
@@ -831,6 +822,7 @@ textarea#comment::placeholder {
     text-align: center;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 .location_left {
     width: 12.3%;
