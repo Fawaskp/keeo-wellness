@@ -57,7 +57,7 @@
                   </div>
                </nav>
             </div>
-            <div class="container-fluid">
+            <div class="container">
                <div class="logo"><a href="index.html"><img class="logo-img" src="images/logo.png"></a></div>
                <div class="menu_main">
                   <ul>
@@ -70,52 +70,80 @@
          </div>
 
          <style>
-            .tag {
-  opacity: 0;
-  transform: translate(0, 10vh);
-  transition: all 1s;
+            #welcome-text {
+animation: banner-loading-animation2 1s ease;
 }
 
 .banner-img{
    display: none;
    position: absolute; 
-   width: 45%; 
+   width: 40%; 
    right: 0; 
-   top: -150px; 
+   top: 15rem;
    filter: opacity(.75) saturate(.2);
+
+   animation: banner-loading-animation 1s ease;
 }
 
-.banner-img-before{
-   opacity: 0;
-  transform: translate(10vw, 0);
-  transition: all 1s;
+
+@keyframes banner-loading-animation2{
+   0%{
+      opacity: 0;
+      transform: translate(0, 10vh);
+
+   }
+   100%{
+      opacity: 1;
+      transform: translate(0, 0);
+   }
 }
 
-.banner-img-visible{
-   opacity: 1;
-   transform: translate(0, 0);
+@keyframes banner-loading-animation{
+   0%{
+      opacity: 0;
+      transform: translate(10vw, 0);
+
+   }
+   100%{
+      opacity: 1;
+      transform: translate(0, 0);
+   }
 }
 
-.tag.visible {
-  opacity: 1;
-  transform: translate(0, 0);
-}
+.bouncing-text {
+   color: #5A121E;
+            display: inline-block;
+            animation: bounce 1s reverse 1s ease-in; 
+        }
+
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+
          </style>
 
          <!-- banner section start -->
          <div style="position: relative;" class="banner_section layout_padding">
          <img  src="./images/DSC03663.png" alt="" class="banner-img banner-img-before">
             
-            <div  id="welcome-text" class="tag" >
+            <div  id="welcome-text" >
                <h1 class="welcome-keeo-wellness" >
-                  Welcome to <br style="display: none;" > <span style="color: #5A121E;">Keeo Wellness</span>
+                  Welcome to <br style="display: none;" > 
+                  <br class="welcome-keeo-wellness-br" >
+                   <span style="color: #5A121E;">Keeo Wellness</span>
                </h1>
-               <h5  class="welcome-description">
-                  where we're dedicated to guiding you on your path to a <b style="color: #5A121E;" >healthier</b>, <b style="color: #5A121E;" >happier</b> you.
-               </h5>
-               <h5 class="welcome-description">
+               <h2 class="welcome-description-1">
+                  where we're dedicated to guiding you on your path to a <b class="bouncing-text" >healthier, happier</b> you.
+               </h2>
+               <h3 class="welcome-description-2">
                   Discover a curated selection of products and expert advice tailored to nurture your mind, body, and soul, empowering you to embrace wellness as a lifestyle.
-               </h5>
+               </h3>
             </div>
             
             <!-- <div id="main_slider" class="carousel slide" data-ride="carousel">
@@ -175,12 +203,12 @@
                      </div>
                      <div class="col-md-4">
                         <div class="border_main">
-                           <div class="image_4"><img src="images/img-5.jpg"></div>
+                           <div class="image_4"><img src="images/img-6.jpg"></div>
                         </div>
                      </div>
                      <div class="col-md-4">
                         <div class="border_main">
-                           <div class="image_4"><img src="images/img-6.jpg"></div>
+                           <div class="image_4"><img src="images/img-5.jpg"></div>
                         </div>
                      </div>
                   </div>
@@ -195,7 +223,7 @@
                <h1 class="watchs_taital">Get In Touch</h1>
             </div>
             <div class="contact_section_2">
-               <div class="container-fluid">
+               <div class="container">
                   <div class="row">
                      <div class="col-md-6">
                         <div class="mail_section_1">
@@ -284,15 +312,13 @@
       </div>
       <!-- copyright section end -->
       <!-- Javascript files-->
-       <script>
-          console.log('Loading...........')
+       <!-- <script>
          window.addEventListener('load',()=>{
             document.getElementById('welcome-text').classList.add('visible')
             console.log(document.getElementsByClassName('banner-img')[0])
             document.getElementsByClassName('banner-img')[0].classList.add('banner-img-visible')
-
          })
-       </script>
+       </script> -->
       <script src="js/jquery.min.js"></script>
       <script src="js/popper.min.js"></script>
       <script src="js/bootstrap.bundle.min.js"></script>

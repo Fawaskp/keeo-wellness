@@ -267,9 +267,16 @@ button {
     font-weight: 700;
 }
 
-.welcome-description{
+.welcome-description-1{
+    color: white !important;
+font-size: 36px;
+padding-top: 14px;
+}
+
+.welcome-description-2{
         color: white !important;
-    font-size: 23px;
+    font-size: 30px;
+    max-width: 50%;
     padding-top: 14px;
 }
 
@@ -347,7 +354,7 @@ button {
 }
 .menu_main li a:hover{
     color: #ffffff;
-    background-color: #cfcfcf;
+    background-color: #cba772;
 }
 .menu_main li.active a{
     color: #ffffff;
@@ -367,7 +374,7 @@ button {
 
 .header_main {
     width: 100%;
-    padding: 10px 0px 37px 0px;
+    padding: 23px 0px 37px 0px;
     overflow: hidden;
 }
 
@@ -379,7 +386,6 @@ button {
     width: 100%;
     float: left;
     padding-bottom: 90px;
-    height: 100vh;
 
 }
 
@@ -723,7 +729,6 @@ button {
 }
 .mail_section_1 {
     width: 84%;
-    float: right;
 }
 .mail_text {
     width: 100%;

@@ -343,7 +343,7 @@ h1.watchs_taital::after {
     display: none;
 }
 .header_section{
-    background: #0a0a09;
+    background: #ffcc81;
 }
 .navbar-toggler { 
     background-color: #ffffff; 
@@ -688,3 +688,22 @@ h1.watchs_taital::after {
         display: block!important;
     }
 }
+
+@media only screen and (min-width: 1025px) {
+    .welcome-keeo-wellness-br{
+        display: none;
+}   
+}
+
+@media only screen and (max-width: 2600px) {
+    .banner_section{
+        height: 100vh;
+    }
+}
+
+@media (min-width: 868px) and (max-width: 2600) {
+    .banner-img {
+        display: block!important;
+    }
+}
+
