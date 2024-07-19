@@ -25,6 +25,26 @@
       <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
       <!-- fonts -->
       <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
+      <!-- meta tags -->
+      <meta name="description" content="Explore a realm of refined wellness with our distinguished selection of premium products, tailored to enhance your journey towards optimal health and vitality.">
+      <meta name="keywords" content="keeo wellness, wellness, feroke">
+
+      <meta property="og:title" content="Keeo Wellness">
+      <meta property="og:description" content="Explore a realm of refined wellness with our distinguished selection of premium products, tailored to enhance your journey towards optimal health and vitality.">
+      <meta property="og:image" content="https://www.keeowellcom.com/images/logo.jpg">
+      <meta property="og:url" content="https://www.keeowellcom.com/">
+      <meta property="og:type" content="website">
+
+      <script type="application/ld+json">
+         {
+           "@context": "https://schema.org",
+           "@type": "WebPage",
+           "name": "Keeo Wellness",
+           "description": "Explore a realm of refined wellness with our distinguished selection of premium products, tailored to enhance your journey towards optimal health and vitality.",
+           "url": "https://www.keeowellness.com/",
+           "image": "https://www.keeowellcom.com/images/logo.jpg"
+         }
+         </script>
    </head>
    <body>
       <!-- header section start -->
@@ -32,7 +52,7 @@
          <div class="header_main">
             <div class="mobile_menu">
                <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                  <div class="logo_mobile"><a href="index.html"><img class="logo-img" src="images/logo.png"></a></div>
+                  <div class="logo_mobile"><a href="index.html"><img class="logo-img" src="images/logo.png" alt="logo of keeo wellness" ></a></div>
                   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                   </button>
@@ -41,9 +61,9 @@
                         <li class="nav-item active">
                            <a class="nav-link" href="">Home</a>
                         </li>
-                        <li class="nav-item">
-                           <a class="nav-link" href="about.html">About</a>
-                        </li>
+                        <!-- <li class="nav-item">
+                           <a class="nav-link" href="#about_section">About</a>
+                        </li> -->
                         <li class="nav-item">
                            <a class="nav-link" href="#contact_section">Contact</a>
                         </li>
@@ -52,11 +72,11 @@
                </nav>
             </div>
             <div class="container">
-               <div class="logo"><a href="index.html"><img class="logo-img" src="images/logo.png"></a></div>
+               <div class="logo"><a href="index.html"><img class="logo-img" src="images/logo.png"  alt="logo of keeo wellness" ></a></div>
                <div class="menu_main">
                   <ul>
                      <li class="active"><a href="index.html">Home</a></li>
-                     <li><a href="about.html">About</a></li>
+                     <!-- <li><a href="#about_section">About</a></li> -->
                      <li><a href="#contact_section">Contact</a></li>
                   </ul>
                </div>
@@ -69,9 +89,8 @@ animation: banner-loading-animation2 1s ease;
 }
 
 .banner-img{
-   width: 100%;
-   display: none;
-   filter: opacity(.8) saturate(.2);
+   width: 50%;
+   /* display: none; */
    animation: banner-loading-animation 1s;
 }
 
@@ -132,13 +151,13 @@ animation: banner-loading-animation2 1s ease;
                   where we're dedicated to guiding you on your path to a <b class="bouncing-text" >healthier, happier</b> you.
                </h2>
 
-               <div style="display: flex; justify-content: between; height: 55 " >
-                  <div style="width: 70%; padding: 2rem 0;" >
+               <div class="welcome-description-container" style="display: flex; flex-direction: column;" >
+                  <div class="welcome-description-div" style=" padding: 2rem 0;" >
                      <h3 class="welcome-description-2">
                         Discover a curated selection of products and expert advice tailored to nurture your mind, body, and soul, empowering you to embrace wellness as a lifestyle.
                      </h3>
                   </div>
-                  <div >
+                  <div class="main-img-container" >
                      <img src="./images/main-img.png" alt="" class="banner-img">
                   </div>
                </div>
@@ -164,7 +183,7 @@ animation: banner-loading-animation2 1s ease;
                      </div>
                      <div class="col-md-6" style="padding: 0;">
                         <p class="about_text">
-                           Black garlic is a superfood with a sweet, tangy flavor. It's rich in antioxidants, boosts immunity, promotes heart health, and has anti-inflammatory properties. The fermentation process enhances nutrient absorption, making it a tasty way to improve your well-being.
+                           Black garlic is a superfood with a sweet, tangy flavor. It's rich in antioxidants, boosts immunity, promotes heart health, and has anti-inflammatory properties. The fermentation process enhances nutrient absorption, making it a tasty way to improve your well-being.
                         </p>
                         <div class="read_bt1"><a href="https://wa.me/+919747253236/?text=Hi,%20I'm%20interested%20to%20know%20more%20about%20the%20product.">Buy Now</a></div>
                      </div>
@@ -194,6 +213,19 @@ animation: banner-loading-animation2 1s ease;
             </div>
          </div>
          <!-- about section end -->
+
+         <!-- <div id="about_section" class="about_section layout_padding"">
+            <div class="container" >
+               <h1 class="watchs_taital"><br>About Us</h1>
+               <div class="about_section_2">
+                  <div class="row">
+                     <div class="col-md-12">
+                        <p class="about_text">Explore a realm of refined wellness with our distinguished selection of premium products, tailored to enhance your journey towards optimal health and vitality.</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div> -->
         
          <!-- contact section start -->
          <div id="contact_section" class="contact_section layout_padding">

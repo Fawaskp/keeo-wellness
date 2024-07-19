@@ -279,6 +279,11 @@ padding-top: 14px;
     padding-top: 14px;
 }
 
+.main-img-container{
+    display: flex;
+    justify-content: center;
+}
+
 .bg-light {
     background-color: transparent !important;
 }
@@ -571,7 +576,7 @@ padding-top: 14px;
     background-color: #ffcc81;
 }
 .about_text {
-    color: #515151;
+    color: #ffffff;
     font-weight: 500;
     width: 100%;
     float: left;

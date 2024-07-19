@@ -669,11 +669,6 @@ h1.watchs_taital::after {
     padding-top: 15px;
 }
 
-
-
-
-
-
 }
 
 
@@ -689,7 +684,13 @@ h1.watchs_taital::after {
         bottom: 40px;
     }
     .banner-img{
-        display: block!important;
+        width: 100%!important;
+    }
+    .welcome-description-div{
+        width: 70%!important;
+    }
+    .welcome-description-container{
+        flex-direction: row!important;
     }
 }
 
