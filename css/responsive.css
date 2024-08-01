@@ -684,7 +684,7 @@ h1.watchs_taital::after {
         bottom: 40px;
     }
     .banner-img{
-        width: 100%!important;
+        width: 75%!important;
     }
     .welcome-description-div{
         width: 70%!important;
@@ -725,11 +725,6 @@ h1.watchs_taital::after {
     }
   }
 
-@media (min-width: 990px) and (max-width: 2600px) {
-    .header_section{
-        height: 100vh;
-    }
-}
 
 @media (min-width: 868px) and (max-width: 2600) {
     .banner-img {
@@ -737,3 +732,7 @@ h1.watchs_taital::after {
     }
 }
 
+
+.header_section{
+    height: 100vh;
+}
