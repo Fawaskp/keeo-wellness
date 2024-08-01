@@ -313,8 +313,22 @@ h1.watchs_taital::after {
 .social_icon li {
     padding: 30px 12px;
 }
+
 .location_main {
     width: 100%;
+    text-align: left;
+}
+.location_left {
+    width: 100%;
+    padding-top: 15px;
+}
+.location_middle {
+    width: 100%;
+    padding-top: 15px;
+}
+.location_right {
+    width: 100%;
+    padding-top: 15px;
 }
 
 
@@ -467,23 +481,6 @@ h1.watchs_taital::after {
 .social_icon li {
     padding: 30px 12px;
 }
-.location_main {
-    width: 100%;
-    text-align: left;
-}
-.location_left {
-    width: 100%;
-    padding-top: 15px;
-}
-.location_middle {
-    width: 100%;
-    padding-top: 15px;
-}
-.location_right {
-    width: 100%;
-    padding-top: 15px;
-}
-
 
 } 
 

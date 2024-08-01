@@ -822,7 +822,7 @@ textarea#comment::placeholder {
 }
 
 .location_main {
-    width: 80%;
+    /* width: 80%; */
     margin: 0 auto;
     text-align: center;
     display: flex;
