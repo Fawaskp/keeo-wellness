@@ -883,7 +883,9 @@ textarea#comment::placeholder {
     color: #5A121E;
 }
 
-
+.footer_icon_color{
+    color: black !important;
+}
 
 
 
